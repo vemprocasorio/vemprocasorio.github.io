@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2 {
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${props => props.theme.font.secondary};
   }
 
   h1 {
@@ -25,15 +25,17 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    ${props => props.theme.font_size.larger};
+    ${props => props.theme.font_size.large};
+    color: ${props => props.theme.color.white.dark};
   }
 
   h3 {
     ${props => props.theme.font_size.large};
+    color: ${props => props.theme.color.primary};
   }
 
   p {
-    ${props => props.theme.font_size.regular};
+    ${props => props.theme.font_size.small};
     color: ${props => props.theme.color.black.light};
   }
 
@@ -64,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
+    color: inherit;
     cursor: pointer;
   }
 `;

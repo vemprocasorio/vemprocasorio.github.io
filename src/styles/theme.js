@@ -4,7 +4,8 @@ const theme = {
     secondary: `'Average', serif`,
   },
   font_size: {
-    small: 'font-size: 20px; line-height: 30px',
+    smaller: 'font-size: 14px; line-height: 22px',
+    small: 'font-size: 16px; line-height: 24px',
     regular: 'font-size: 24px; line-height: 32px',
     large: 'font-size: 30px; line-height: 40px',
     larger: 'font-size: 36px; line-height: 48px',
@@ -16,12 +17,13 @@ const theme = {
       dark: '#F6F6F6',
     },
     black: {
-      lighter: '#ABA8AF',
+      lighter: '#ABABAF',
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#f8a12e',
-  },
+    primary: '#10bf9f',
+    navbar: '#f23847',
+    },
   screen: {
     xs: '575px',
     sm: '767px',

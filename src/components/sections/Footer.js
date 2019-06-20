@@ -3,34 +3,16 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
-
-import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
-
-const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/linuxdev-br',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/linuxdevbr',
-  },
-];
-
 const Footer = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_pot: file(
+        cc: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
+          name: { eq: "cc-by-nc-nd" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 960) {
+            fluid(maxWidth:85) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -38,75 +20,54 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
-        <FooterWrapper>
-          <StyledContainer>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
-              ))}
-            </SocialIcons>
-          </StyledContainer>
-        </FooterWrapper>
-      </React.Fragment>
+          <Grid>
+            <Art><Img fluid={data.cc.childImageSharp.fluid} /></Art>
+            <div>
+            <p>Linux is a registered trademark of Linus Torvalds. Monkey icon by Ludovic Riffaut. Mooks, the cow, is up for the commons.</p>
+            </div>
+            
+            </Grid>
     )}
   />
 );
 
-const SocialIcons = styled.div`
-  display: flex;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  text-align: right;
+  margin: 0;
+  background-color: ${props => props.theme.color.navbar};
 
-  img {
-    margin: 0 8px;
-    width: 24px;
-    height: 24px;
+  p {
+    ${props => props.theme.font_size.smaller};
+    color: ${props => props.theme.color.white.dark};
   }
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-top: 40px;
-  }
-`;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 24px;
 
-const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.primary};
-  padding: 32px 0;
-`;
+    &:last-child {
+      margin-bottom: 0px;
+    }
 
-const Copyright = styled.div`
-  font-family: ${props => props.theme.font.secondary};
-  ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
-
-  a {
-    text-decoration: none;
-    color: inherit;
+    ${props =>
+      props.inverse &&
+      `
+        ${Art} {
+          order: 2;
+        }
+    `}
   }
 `;
 
 const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
-`;
-
-const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-    text-align: center;
-  }
+  max-width: 85px;
+  width: 100%;
 `;
 
 export default Footer;

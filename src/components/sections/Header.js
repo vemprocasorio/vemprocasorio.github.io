@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -12,10 +11,10 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "header" }
+          name: { eq: "gustavo-padovan" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -27,20 +26,18 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img
+                fluid={data.art_build.childImageSharp.fluid}
+                style={{ borderRadius: '50%' }}
+              />
             </Art>
             <Text>
               <h1>
-                August 2-4, 2019
+                Hi, I am
                 <br />
-                São Paulo, Brazil
+                Gustavo Padovan
               </h1>
-              <br />
-              <p>
-                <StyledExternalLink href="https://www.eventbrite.com.br/e/linuxdev-br-2019-registration-59091462154?ref=ebtn">
-                  Register now &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
+              <h2>a few things about me. :)</h2>
             </Text>
           </Grid>
         </Container>
@@ -54,21 +51,18 @@ const HeaderWrapper = styled.header`
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    padding-top: 100px;
+    padding-bottom: 32px;
   }
 `;
 
 const Art = styled.figure`
+  margin: 16px;
+  max-width: 200px;
   width: 100%;
-  margin: 0;
-
-  > div {
-
-    @media (max-width: ${props => props.theme.screen.md}) {
-      width: 100%;
-    }
-  }
+  justify-self: center;
 `;
+
 
 const Grid = styled.div`
   display: grid;
@@ -78,7 +72,7 @@ const Grid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 10px;
 
     > ${Art} {
       order: 2;
@@ -90,16 +84,7 @@ const Text = styled.div`
   justify-self: center;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: start;
-  }
-`;
-
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
+    justify-self: center;
   }
 `;
 

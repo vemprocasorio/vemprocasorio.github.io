@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: '2019 Linux Developer Conference Brazil',
-  title: 'Linux Developer Conference Brazil',
-  url: '',
-  author: 'anarute',
-  keywords: ['gatsby', 'site', 'absurd'],
+  description: 'Mover, Entrepreneur and Software Developer. Brazilian.',
+  title: 'Gustavo Padovan',
+  url: 'https://padovan.org',
+  author: 'guspadovan',
+  keywords: ['gatsby', 'site', 'linux', 'opensource' ],
   twitter: {
-    id: '@linuxdevbr',
+    id: '@guspadovan',
     img: '',
   },
   facebook: {

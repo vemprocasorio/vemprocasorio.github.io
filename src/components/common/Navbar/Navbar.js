@@ -1,22 +1,42 @@
 import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Scrollspy from 'react-scrollspy';
-
-import { Container } from '@components/global';
+import styled from 'styled-components';
+import ExternalLink from '@common/ExternalLink';
 import {
   Nav,
-  NavItem,
   Brand,
   StyledContainer,
   NavListWrapper,
-  MobileMenu,
-  Mobile,
 } from './style';
 
-import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
-import Logo from '@images/logos/logo-white.svg';
+import MailIcon from '@static/icons/mail.svg';
+import TwitterIcon from '@static/icons/twitter.svg';
+import MediumIcon from '@static/icons/medium.svg';
+import LinkedinIcon from '@static/icons/linkedin.svg'
+import InstagramIcon from '@static/icons/instagram.svg';
 
-const NAV_ITEMS = ['About', 'Speakers', 'Sponsors', 'FAQ'];
+const SOCIAL = [
+  {
+    icon: MailIcon,
+    link: 'mailto:gustavo@padovan.org',
+  },
+  {
+    icon: TwitterIcon,
+    link: 'https://twitter.com/guspadovan',
+  },
+  {
+    icon: MediumIcon,
+    link: 'https://medium.com/@gusp',
+  },
+  {
+    icon: LinkedinIcon,
+    link: 'https://www.linkedin.com/in/gustavo-padovan/',
+  },
+  {
+    icon: InstagramIcon,
+    link: 'https://instagram.com/guspadovan',
+  },
+];
+
 
 class Navbar extends Component {
   state = {
@@ -33,24 +53,17 @@ class Navbar extends Component {
     }
   };
 
-  getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </AnchorLink>
-  );
-
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-      </Scrollspy>
+    <StyledContainer>
+        {SOCIAL.map(({ icon, link }) => (
+            <SocialIcons>
+               <ExternalLink href={link}>
+                 <img src={icon} alt="link" />
+               </ExternalLink>
+               </SocialIcons>
+             ))}
+      </StyledContainer>
     </NavListWrapper>
   );
 
@@ -60,25 +73,25 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand><img src={Logo} alt="linuxdev-br" /></Brand>
-          <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
-              <MenuIcon />
-            </button>
-          </Mobile>
-
-          <Mobile hide>{this.getNavList({})}</Mobile>
+          {this.getNavList({})}
         </StyledContainer>
-        <Mobile>
-          {mobileMenuOpen && (
-            <MobileMenu>
-              <Container>{this.getNavList({ mobile: true })}</Container>
-            </MobileMenu>
-          )}
-        </Mobile>
       </Nav>
     );
   }
 }
+
+const SocialIcons = styled.div`
+  display: flex;
+
+  img {
+    margin: 16px 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-top: 16px;
+  }
+`;
 
 export default Navbar;

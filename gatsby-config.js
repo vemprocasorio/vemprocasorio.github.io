@@ -8,29 +8,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `speakers`,
-        path: `${__dirname}/src/images/speakers`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `art`,
-        path: `${__dirname}/src/images/art`,
+        path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `LinuxDevBr`,
-        short_name: `linuxdevbr`,
+        name: `Gustavo Padovan`,
+        short_name: `guspadovan`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
         display: `minimal-ui`,
-        icon: `static/favicon.png`,
       },
     },
     {
