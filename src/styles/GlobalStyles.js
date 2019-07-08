@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    ${props => props.theme.font_size.large};
+    ${props => props.theme.font_size.regular};
     color: ${props => props.theme.color.white.dark};
   }
 
@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h2 {
-      ${props => props.theme.font_size.large};
+      ${props => props.theme.font_size.regular};
     }
 
     h3 {

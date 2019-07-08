@@ -37,7 +37,7 @@ const Header = () => (
                 <br />
                 Gustavo Padovan
               </h1>
-              <h2>a few things about me. :)</h2>
+              <h2>Mover, Entrepreneur and Software Developer. </h2>
             </Text>
           </Grid>
         </Container>

@@ -73,12 +73,7 @@ const About = () => (
               Partner at <ExternalLink href="https://www.collabora.com/">Collabora
               </ExternalLink>, a well respected Open Source Software
               consultancy that helps top companies in the world to create
-              the next generation of technology with Open Source Software inside. 
-              Along with Sjoerd Simons we lead the Core team at Collabora,
-              that supports clients on hardware enablement, kernel development,
-              base platform and generic userspace needs. With Tomeu Vizoso
-              we co-manage the relationship with one the most interesting
-              Collabora clients.
+              the next generation of technology with Open Source Software inside.
               </p>
             </div>
             <Art>
@@ -99,14 +94,13 @@ const About = () => (
               <p>
                  After many years traveling around the globe attending and
                  speaking at Open Source and Linux conferences I felt we did
-                 not have, in Brazil, a forum like those to talk about upstream
-                 development of Linux technologies. So, in 2017, together 
-                 two of my best friends, Bruno Dilly and João Moreira
+                 not have a forum like those in Brazil, to talk about upstream
+                 development of Linux technologies. So, in 2017, together with 
+                 two of my best friends, Bruno Dilly and João Moreira,
                  we co-founded the <ExternalLink href="https://linuxdev-br.net">
                  Linux Developer Conference Brazil</ExternalLink>. linuxdev-br is
                  its short name. linuxdev-br is a conference 
-                 born to be international and become a meeting point 
-                 for the Brazilian and international communities. 
+                 born to be international. 
                  See our <ExternalLink href="https://linuxdev-br.net/mission">mission</ExternalLink>.
                 
               </p>
@@ -118,13 +112,11 @@ const About = () => (
               <p>
               I spent a decade as developer and maintainer in the Linux Kernel community.
               First in the Bluetooth subsystem as developer and co-maintainer and
-              later moved on to the graphics and media side, where I developed 
-              in the DRM/KMS and Media
-              subsystems where we did the Atomic Modesetting API and added support
-              to Explicit Synchronization to the mainline Linux Kernel. That helped
+              later on to in the Graphics and Media subsystems, during that time
+              the DRM/KMS Atomic Modeseting API happened. Among other things, that helped
               unifying display drivers for Android, ChromeOS and Linux
-              generic stacks. Nowaways I work in the connection between Community and
-	      Business.
+              generic stacks. Nowadays I work in the connection between the community and
+	            the business world.
               </p>
             </div>
             <Art>
@@ -141,21 +133,20 @@ const About = () => (
             <h3>Open Source Advocate</h3>
               <p>
                 During high-school, in 2004, I was also doing a IT basic course, writing my
-                first few programs (in Pascal!). I remember a Linux workshop once, given by
-                a Free Software group from <ExternalLink href="https://www.kernel.org/">Unicamp</ExternalLink>,
+                first few programs (in Pascal!). I remember a Linux introduction workshop
+	    	once, given by a Free Software group
+	         from <ExternalLink href="https://www.unicamp.br/">Unicamp</ExternalLink>,
                  the University of Campinas in Brazil.
-                That group was called GPSL (Grupo Pró Software Livre in Portuguese), that day
-                they teached us basic things in GNU/Linux such as the 'ls' command. It was my
-                 fisrt exposure ever to Free Software and its filosofy. However,
-                it still took me more than a year until I managed to install and use Linux for the 
-                first time. It hooked me!
+                That group was called GPSL (Grupo Pró Software Livre in Portuguese).
+                It was my first exposure ever to Free Software and its filosofy. However,
+                it still took me more than a year until I managed to install Linux for the 
+                first time. There was no way back, it hooked me!
                 2 years later I was a Computer Science, B.S. freshemen at the same university.
-                There I met GPSL again. The guys who teached me about GNU/Linux back then at
-                 high-school became my friends, and quickly I was a quite active member of the
-                 group. It was during that time I sent 
-                 my <ExternalLink href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=96a331b1d6426726c37242ddbe939ee14b255790">
-                first patch</ExternalLink> to the kernel.
-                The rest is history! The cute flying cow you see here is Mooks, GPSL's mascot. :)
+                The guys who taught me about GNU/Linux back then at
+                 high-school, we became friends, and quickly I was a quite active member of GPSL.
+                 My <ExternalLink href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=96a331b1d6426726c37242ddbe939ee14b255790">
+                first patch</ExternalLink> to the kernel was during that time and the rest... is history!
+                The cute flying cow you see here is Mooks, GPSL's mascot. :)
               </p>
             </div>
           </Grid>
@@ -163,8 +154,8 @@ const About = () => (
             <div>
             <h3>Learning Geek</h3>
               <p>
-              I always had been an obsessed learner when it come to my passions.
-             Linux is a huge one. Lately I developed a passion about how to be a better Human
+              I have always been an obsessed learner when it comes to my passions.
+             Linux is a big one. Lately I developed a passion about how to be a better Human
              everyday, learning to listen, connect and collaborate better everyday.
              To progress on that journey, I have been practicing and consuming a lot
              of content around Communications, Self-development, Communities and Business.
