@@ -69,7 +69,7 @@ const About = () => (
             <div>
               <h3>Open First at Collabora!</h3>
               <p>
-              I am Linux Core Technologies Lead, Client Relationship Manager and
+              Linux Core Technologies Lead, Client Relationship Manager and
               Partner at <ExternalLink href="https://www.collabora.com/">Collabora
               </ExternalLink>, a well respected Open Source Software
               consultancy that helps top companies in the world to create
