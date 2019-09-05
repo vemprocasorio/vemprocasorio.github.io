@@ -119,11 +119,11 @@ const About = () => (
 	            the business world.
               </p>
             </div>
-            <Art>
+            <Art_sm>
               <ExternalLink href="https://www.kernel.org/">
                 <Img fluid={data.tux.childImageSharp.fluid} />
               </ExternalLink>
-            </Art>
+            </Art_sm>
           </Grid>
           <Grid inverse>
             <Art>
@@ -163,11 +163,12 @@ const About = () => (
               and student of <ExternalLink href="https://instagram.com/portal.ido/">Ido Portal</ExternalLink>.
               </p>
             </div>
-            <Art>
+            <Art_sm>
                 <Img
                   fluid={data.macaca.childImageSharp.fluid}
+                  style={{ borderRadius: '50%' }}
                 />
-            </Art>
+            </Art_sm>
           </Grid>
         </Container>
       </Section>
@@ -217,6 +218,12 @@ const Grid = styled.div`
 const Art = styled.figure`
   margin: 0;
   max-width: 300px;
+  width: 100%;
+`;
+
+const Art_sm = styled.figure`
+  margin: 0;
+  max-width: 250px;
   width: 100%;
 `;
 
