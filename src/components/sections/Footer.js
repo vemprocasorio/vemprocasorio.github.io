@@ -23,7 +23,7 @@ const Footer = () => (
           <Grid>
             <Art><Img fluid={data.cc.childImageSharp.fluid} /></Art>
             <div>
-            <p>Linux is a registered trademark of Linus Torvalds. Monkey icon by Ludovic Riffaut. Mooks, the cow, is up for the commons.</p>
+            <p>Linux is a registered trademark of Linus Torvalds. Mooks, the cow, is up for the commons.</p>
             </div>
             
             </Grid>
