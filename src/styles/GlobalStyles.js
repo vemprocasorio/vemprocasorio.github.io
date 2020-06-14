@@ -26,12 +26,12 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     ${props => props.theme.font_size.regular};
-    color: ${props => props.theme.color.white.dark};
+    color: ${props => props.theme.color.grey};
   }
 
   h3 {
     ${props => props.theme.font_size.large};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.grey};
   }
 
   p {

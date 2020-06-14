@@ -21,8 +21,9 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#6FB7BF',
-    navbar: '#F25764',
+    grey: '#565656',
+    primary: '#E0E0E0',
+    navbar: '#C7C7C7',
     },
   screen: {
     xs: '575px',

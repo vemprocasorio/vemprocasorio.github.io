@@ -52,7 +52,7 @@ const About = () => (
         }
       macaca: file(
         sourceInstanceName: { eq: "art" }
-        name: { eq: "macaca" }
+        name: { eq: "mvmt" }
       ) {
         childImageSharp {
           fluid(maxWidth: 400) {
