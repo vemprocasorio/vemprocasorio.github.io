@@ -72,7 +72,7 @@ const About = () => (
               Linux Core Technologies Lead, Client Relationship Manager and
               Partner at <ExternalLink href="https://www.collabora.com/">Collabora
               </ExternalLink>, a well respected Open Source Software
-              consultancy that helps top companies in the world to create
+              consultancy that helps top companies in the world create
               the next generation of technology with Open Source Software inside.
               </p>
             </div>
@@ -92,14 +92,14 @@ const About = () => (
             <div>
             <h3>Co-founder of the linuxdev-br conference</h3>
               <p>
-                 After many years traveling around the globe attending and
+                 After many years traveling around the globe attending, and
                  speaking at Open Source and Linux conferences I felt we did
                  not have a forum like those in Brazil, to talk about upstream
                  development of Linux technologies. So, in 2017, together with 
                  two of my best friends, Bruno Dilly and João Moreira,
                  we co-founded the <ExternalLink href="https://linuxdev-br.net">
-                 Linux Developer Conference Brazil</ExternalLink>. linuxdev-br is
-                 its short name. linuxdev-br is a conference 
+                 Linux Developer Conference Brazil</ExternalLink> - linuxdev-br is
+                 its short name - is a conference 
                  born to be international. 
                  See our <ExternalLink href="https://linuxdev-br.net/mission">mission</ExternalLink>.
                 
@@ -111,8 +111,8 @@ const About = () => (
             <h3>Linux Community member</h3>
               <p>
               I spent a decade as developer and maintainer in the Linux Kernel community.
-              First in the Bluetooth subsystem as developer and co-maintainer and
-              later on to in the Graphics and Media subsystems, during that time
+              First in the Bluetooth subsystem as developer and co-maintainer, and
+              later on in the Graphics and Media subsystems, during that time
               the DRM/KMS Atomic Modeseting API happened. Among other things, that helped
               unifying display drivers for Android, ChromeOS and Linux
               generic stacks. Nowadays I work in the connection between the community and
@@ -143,7 +143,7 @@ const About = () => (
                 first time. There was no way back, it hooked me!
                 2 years later I was a Computer Science, B.S. freshemen at the same university.
                 The guys who taught me about GNU/Linux back then at
-                 high-school, we became friends, and quickly I was a quite active member of GPSL.
+                 high-school became my friends, and quickly I was a quite active member of GPSL.
                  My <ExternalLink href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=96a331b1d6426726c37242ddbe939ee14b255790">
                 first patch</ExternalLink> to the kernel was during that time and the rest... is history!
                 The cute flying cow you see here is Mooks, GPSL's mascot. :)
@@ -155,7 +155,7 @@ const About = () => (
             <h3>Learning Geek</h3>
               <p>
               I have always been an obsessed learner when it comes to my passions.
-             Linux is a big one. Lately I developed a passion about how to be a better Human
+             Linux is a big one. Lately, I developed a passion about how to be a better Human
              everyday, learning to listen, connect and collaborate better everyday.
              To progress on that journey, I have been practicing and consuming a lot
              of content around Communications, Self-development, Communities and Business.
