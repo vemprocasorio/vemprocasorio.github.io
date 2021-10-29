@@ -29,7 +29,7 @@ const SOCIAL = [
   },
   {
     icon: LinkedinIcon,
-    link: 'https://www.linkedin.com/in/gustavo-padovan/',
+    link: 'https://www.linkedin.com/in/guspadovan/',
   },
   {
     icon: InstagramIcon,

@@ -69,7 +69,7 @@ const About = () => (
             <div>
               <h3>Open First at Collabora!</h3>
               <p>
-              Linux Core Technologies Lead, Client Relationship Manager and
+              Kernel team Lead, Client Relationship Manager and
               Partner at <ExternalLink href="https://www.collabora.com/">Collabora
               </ExternalLink>, a well respected Open Source Software
               consultancy that helps top companies in the world create
@@ -155,11 +155,11 @@ const About = () => (
             <h3>Learning Geek</h3>
               <p>
               I have always been an obsessed learner when it comes to my passions.
-             Linux is a big one. Lately, I developed a passion about how to be a better Human
+             Linux is a big one, of course. Lately, I developed a passion about how to be a better Human
              everyday, learning to listen, connect and collaborate better everyday.
              To progress on that journey, I have been practicing and consuming a lot
              of content around Communications, Self-development, Communities and Business.
-             I am also a Movement practioner 
+             I am also a Movement practitioner 
               and student of <ExternalLink href="https://instagram.com/portal.ido/">Ido Portal</ExternalLink>.
               </p>
             </div>
