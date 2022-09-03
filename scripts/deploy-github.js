@@ -4,7 +4,7 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
-    branch: 'master',
+    branch: 'gh-pages',
     repo: 'git@github.com:padovan/padovan.github.io.git',
   },
   () => {

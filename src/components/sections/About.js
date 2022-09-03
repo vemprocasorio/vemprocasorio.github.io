@@ -85,7 +85,7 @@ const About = () => (
           <br />
           <Grid inverse>
             <Art>
-              <ExternalLink href="https://linuxdev-br.net">
+              <ExternalLink href="https://linuxdev-br.github.io/">
                 <Img fluid={data.linuxdevbr.childImageSharp.fluid} />
               </ExternalLink>
             </Art>
@@ -97,11 +97,11 @@ const About = () => (
                  not have a forum like those in Brazil, to talk about upstream
                  development of Linux technologies. So, in 2017, together with 
                  two of my best friends, Bruno Dilly and João Moreira,
-                 we co-founded the <ExternalLink href="https://linuxdev-br.net">
+                 we co-founded the <ExternalLink href="https://linuxdev-br.github.io/">
                  Linux Developer Conference Brazil</ExternalLink> - linuxdev-br is
                  its short name - is a conference 
                  born to be international. 
-                 See our <ExternalLink href="https://linuxdev-br.net/mission">mission</ExternalLink>.
+                 See our <ExternalLink href="https://linuxdev-br.github.io/mission">mission</ExternalLink>.
                 
               </p>
             </div>
@@ -137,6 +137,7 @@ const About = () => (
 	    	once, given by a Free Software group
 	         from <ExternalLink href="https://www.unicamp.br/">Unicamp</ExternalLink>,
                  the University of Campinas in Brazil.
+                 </p><p>
                 That group was called GPSL (Grupo Pró Software Livre in Portuguese).
                 It was my first exposure ever to Free Software and its filosofy. However,
                 it still took me more than a year until I managed to install Linux for the 
@@ -150,17 +151,22 @@ const About = () => (
               </p>
             </div>
           </Grid>
-          <Grid>
+          <Grid inverse>
             <div>
-            <h3>Learning Geek</h3>
+            <h3>Life Student</h3>
               <p>
-              I have always been an obsessed learner when it comes to my passions.
-             Linux is a big one, of course. Lately, I developed a passion about how to be a better Human
-             everyday, learning to listen, connect and collaborate better everyday.
-             To progress on that journey, I have been practicing and consuming a lot
-             of content around Communications, Self-development, Communities and Business.
-             I am also a Movement practitioner 
-              and student of <ExternalLink href="https://instagram.com/portal.ido/">Ido Portal</ExternalLink>.
+              I truly believe in being a life student. Everything is an opportunity for learning and then do better next time. There are no mistakes.
+
+I've been practicing to be more open to the world everyday; it's a constant struggle. But day after I am trying to be a better human being
+in everything I do, listening more and giving back more. Loving more.
+</p><p>
+
+I have an interest in the intersections of few areas of knowledge such as Open Source, Complex Systems, Syntropic Farming,
+Communications, Business, Economics, Philosophy, Psychology and more.
+</p><p>
+But maybe my biggest interest and fulfillment comes from my Movement Practice. Through that practice, I learn more about myself
+and the people around me. For as weird it may seem, in this practice we explore what is this thing of living in a body.
+I share a lot about it on my <ExternalLink href="https://instagram.com/guspadovan/">Instagram</ExternalLink>. Reach out to me if you are curious.
               </p>
             </div>
             <Art_sm>
