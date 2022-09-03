@@ -50,9 +50,9 @@ const About = () => (
             }
           }
         }
-      macaca: file(
+      movement: file(
         sourceInstanceName: { eq: "art" }
-        name: { eq: "mvmt" }
+        name: { eq: "movement1" }
       ) {
         childImageSharp {
           fluid(maxWidth: 400) {
@@ -171,7 +171,7 @@ I share a lot about it on my <ExternalLink href="https://instagram.com/guspadova
             </div>
             <Art_sm>
                 <Img
-                  fluid={data.macaca.childImageSharp.fluid}
+                  fluid={data.movement.childImageSharp.fluid}
                   style={{ borderRadius: '50%' }}
                 />
             </Art_sm>
