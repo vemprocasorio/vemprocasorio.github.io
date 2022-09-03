@@ -55,7 +55,7 @@ class Navbar extends Component {
       <Nav {...this.props}>
         
         <StyledContainer>
-          <h1>Ana Carolina e Gustavo</h1>
+          <h1>Ana Carolina &amp; Gustavo</h1>
           {this.getNavList({})}
         </StyledContainer>
       </Nav>
