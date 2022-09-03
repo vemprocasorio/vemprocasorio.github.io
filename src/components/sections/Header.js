@@ -11,7 +11,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "padovan-2020" }
+          name: { eq: "nous1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 200) {
@@ -28,16 +28,14 @@ const Header = () => (
             <Art>
               <Img
                 fluid={data.art_build.childImageSharp.fluid}
-                style={{ borderRadius: '50%' }}
+                style={{ borderRadius: '90%' }}
               />
             </Art>
             <Text>
               <h1>
-                Hi, I am
-                <br />
-                Gustavo Padovan
+                Vem pro casório!
               </h1>
-              <h2>Mover, Entrepreneur and Software Developer. </h2>
+              <h2>Club Homs, São Paulo | 16 de dezembro de 2023</h2>
             </Text>
           </Grid>
         </Container>

@@ -21,9 +21,8 @@ const Footer = () => (
     `}
     render={data => (
           <Grid>
-            <Art><Img fluid={data.cc.childImageSharp.fluid} /></Art>
             <div>
-            <p>Linux is a registered trademark of Linus Torvalds. Mooks, the cow, is up for the commons.</p>
+            <p><span>🖤💙</span></p>
             </div>
             
             </Grid>
@@ -33,11 +32,11 @@ const Footer = () => (
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   align-items: center;
   justify-items: center;
-  text-align: right;
+  text-align: center;
   margin: 0;
   background-color: ${props => props.theme.color.navbar};
 

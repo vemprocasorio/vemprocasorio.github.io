@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Karla', serif`,
-    secondary: `'Karla', serif`,
+    primary: `'Roboto', serif`,
+    secondary: `'Roboto', serif`,
   },
   font_size: {
     smaller: 'font-size: 14px; line-height: 22px',
@@ -21,9 +21,9 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    grey: '#565656',
+    grey: '#767676',
     primary: '#E0E0E0',
-    navbar: '#C7C7C7',
+    navbar: '#D7D7D7',
     },
   screen: {
     xs: '575px',

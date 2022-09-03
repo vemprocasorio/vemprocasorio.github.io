@@ -15,26 +15,6 @@ import LinkedinIcon from '@static/icons/linkedin.svg'
 import InstagramIcon from '@static/icons/instagram.svg';
 
 const SOCIAL = [
-  {
-    icon: MailIcon,
-    link: 'mailto:gustavo@padovan.org',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/guspadovan',
-  },
-  {
-    icon: MediumIcon,
-    link: 'https://medium.com/@gusp',
-  },
-  {
-    icon: LinkedinIcon,
-    link: 'https://www.linkedin.com/in/guspadovan/',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/guspadovan',
-  },
 ];
 
 
@@ -64,6 +44,7 @@ class Navbar extends Component {
                </SocialIcons>
              ))}
       </StyledContainer>
+      
     </NavListWrapper>
   );
 
@@ -72,7 +53,9 @@ class Navbar extends Component {
 
     return (
       <Nav {...this.props}>
+        
         <StyledContainer>
+          <h1>Ana Carolina e Gustavo</h1>
           {this.getNavList({})}
         </StyledContainer>
       </Nav>

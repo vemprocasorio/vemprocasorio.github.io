@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Mover, Entrepreneur and Software Developer. Brazilian.',
-  title: 'Gustavo Padovan',
-  url: 'https://padovan.org',
+  description: 'Vem pro casório!',
+  title: 'Ana Carolina & Gustavo - Vem!',
+  url: 'https://vemprocasorio.com.br',
   author: 'guspadovan',
-  keywords: ['gatsby', 'site', 'linux', 'opensource' ],
+  keywords: ['casamento' ],
   twitter: {
-    id: '@guspadovan',
+    id: '',
     img: '',
   },
   facebook: {

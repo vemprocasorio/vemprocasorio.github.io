@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gustavo Padovan`,
-        short_name: `guspadovan`,
+        name: `Ana Carolina & Gustavo`,
+        short_name: `anacarolina-gustavo`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
