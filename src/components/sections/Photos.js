@@ -51,10 +51,10 @@ const Photos = () => (
 
 const HeaderWrapper = styled.header`
   background-color: #f5f5f5;
-  padding-top: 96px;
+  padding-top: 16px;
   padding-bottom: 50px;
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    padding-top: 16px;
   }
 `;
 
@@ -76,7 +76,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 14px;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
@@ -96,7 +96,7 @@ const VideoGrid = styled.div`
 const Video = styled.iframe`
   width: 100%;
   max-width: 900px;
-  min-height: 500px;
+  min-height: 400px;
   height: 100%;
   margin: 0;
   border-radius: 2px;
@@ -109,8 +109,8 @@ const PhotoGrid = styled.div`
   grid-template-columns: 2fr 1fr;
   align-items: center;
   grid-gap: 64px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
