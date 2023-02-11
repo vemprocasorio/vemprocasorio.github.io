@@ -7,6 +7,22 @@ import { Section, Container, SectionTitle, Red } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Presentes = () => (
+    <StaticQuery
+    query={graphql`
+      query {
+        pix: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "qrcode-pix" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 450) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+    }
+    `}
+    render={data => (
     <Section id="presentes">
         <HeaderWrapper>
         <Container>
@@ -15,13 +31,18 @@ const Presentes = () => (
                         uma em São Paulo e outra em Montréal no Canadá.
                         Por esse motivo não estamos aceitando items como presente.
                      Nossa lua de mel será pelas praias do Nordeste brasileiro. Nos presenteie com
-                     PIX para <strong>11-975722701</strong> pra ajudar na nossa viagem! 
+                     PIX para <strong>11-975722701</strong> ou pelo QR code abaixo:
                     </p>
-                <Grid>
-                </Grid>
+                <VideoGrid>
+                    <Art>
+                    <Img fluid={data.pix.childImageSharp.fluid} style={{ borderRadius: '0%' }} />
+                    </Art>
+                </VideoGrid>
         </Container>
         </HeaderWrapper>
     </Section>
+    )}
+    />
 );
 
 const HeaderWrapper = styled.header`
@@ -34,12 +55,15 @@ const HeaderWrapper = styled.header`
 `;
 
 const Art = styled.figure`
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
   }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   grid-gap: 64px;
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -56,6 +80,8 @@ const VideoGrid = styled.div`
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  grid-gap: 64px;
+
 `;
 
 const Video = styled.iframe`
