@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import { Container } from '@components/global';
@@ -25,7 +26,11 @@ const NAV = [
   },
   {
     name: 'Cerimônia e Festa',
-    anchor: 'festa',
+    anchor: '#festa',
+  },
+  {
+    name: 'Hospedagem',
+    anchor: '#hospedagem',
   },
 ];
 
@@ -69,7 +74,8 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-        <h1>Ana Carolina &amp; Gustavo</h1>
+        <Text><h1>Ana Carolina &amp; Gustavo</h1></Text>
+        
           <Mobile>
             <button onClick={this.toggleMobileMenu}  style={{ color: 'black' }}>
               <MenuIcon />
@@ -89,5 +95,9 @@ class Navbar extends Component {
     );
   }
 }
+
+const Text = styled.div`
+  margin-top: 14px;
+`;
 
 export default Navbar;
