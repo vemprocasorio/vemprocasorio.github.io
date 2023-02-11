@@ -7,12 +7,12 @@ const Footer = () => (
   <StaticQuery
     query={graphql`
       query {
-        cc: file(
+        pebble: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "cc-by-nc-nd" }
+          name: { eq: "pebble" }
         ) {
           childImageSharp {
-            fluid(maxWidth:85) {
+            fluid(maxWidth:2100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -20,12 +20,15 @@ const Footer = () => (
       }
     `}
     render={data => (
-          <Grid>
-            <div>
+          <LargeGrid>
+
+          <Art_big>
+          <Img fluid={data.pebble.childImageSharp.fluid} />
+          </Art_big>
+          <div>
             <p><span>🖤💙</span></p>
             </div>
-            
-            </Grid>
+        </LargeGrid>
     )}
   />
 );
@@ -62,6 +65,18 @@ const Grid = styled.div`
         }
     `}
   }
+`;
+
+const LargeGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+`;
+
+const Art_big = styled.figure`
+  margin: 0;
+  width: 100%;
 `;
 
 const Art = styled.figure`

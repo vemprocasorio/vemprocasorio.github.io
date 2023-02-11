@@ -10,22 +10,32 @@ const About = () => (
   <StaticQuery
     query={graphql`
       query {
-        savethedate: file(
+        ana1: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "savethedate" }
+          name: { eq: "ana1" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 450) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
-        nous1: file(
+        gus1: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "nous1" }
+          name: { eq: "gus1" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 450) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        nous: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "nous2" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 450) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -35,11 +45,69 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          <LargeGrid>
-            <Art_big>
-                <Img fluid={data.savethedate.childImageSharp.fluid} />
-            </Art_big>
-          </LargeGrid>
+        <Grid>
+            <div>
+              <h2>A noiva</h2>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
+              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
+              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
+               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
+               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
+                eu eu lacus. Integer vel luctus turpis.
+               Praesent semper eget nunc ut sollicitudin.
+              </p>
+
+            </div>
+            <Art>
+              <Img
+                fluid={data.ana1.childImageSharp.fluid}
+                style={{ borderRadius: '20%' }}
+              />
+            </Art>
+          </Grid>
+          <Grid>
+          <div>
+            <h2>O noivo</h2>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
+              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
+              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
+               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
+               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
+                eu eu lacus. Integer vel luctus turpis.
+               Praesent semper eget nunc ut sollicitudin.
+              </p>
+
+            </div>
+              <Art>
+              <Img
+                fluid={data.gus1.childImageSharp.fluid}
+                style={{ borderRadius: '20%' }}
+              />
+            </Art>
+
+          </Grid>
+          <Grid inverse>
+              <Art>
+              <Img
+                fluid={data.nous.childImageSharp.fluid}
+                style={{ borderRadius: '20%' }}
+              />
+            </Art>
+            <div>
+            <h2>Vida a dois</h2>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
+              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
+              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
+               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
+               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
+                eu eu lacus. Integer vel luctus turpis.
+               Praesent semper eget nunc ut sollicitudin.
+              </p>
+            </div>
+          </Grid>
           <br />    
         </Container>
       </Section>
@@ -50,7 +118,7 @@ const About = () => (
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
+  grid-gap: 20px;
   text-align: right;
   align-items: center;
   justify-items: center;
@@ -86,21 +154,9 @@ const Grid = styled.div`
   }
 `;
 
-const LargeGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-`;
-
 const Art = styled.figure`
   margin: 0;
   max-width: 300px;
-  width: 100%;
-`;
-
-const Art_big = styled.figure`
-  margin: 0;
   width: 100%;
 `;
 

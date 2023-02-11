@@ -1,7 +1,8 @@
 const theme = {
   font: {
-    primary: `'Roboto', serif`,
-    secondary: `'Roboto', serif`,
+    primary: `'Roboto', sans-serif`,
+    secondary: `'Roboto', sans-serif`,
+    title: `'Allura', cursive`,
   },
   font_size: {
     smaller: 'font-size: 14px; line-height: 22px',
@@ -21,14 +22,15 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
+    gold: '#ffd700',
     grey: '#767676',
-    primary: '#E0E0E0',
-    navbar: '#D7D7D7',
+    primary: '#9aba84',
+    navbar: '#ff9e00',
     },
   screen: {
     xs: '575px',
     sm: '767px',
-    md: '991px',
+    md: '800px',
     lg: '1199px',
   },
 };

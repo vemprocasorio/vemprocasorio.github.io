@@ -55,13 +55,20 @@ class Navbar extends Component {
       <Nav {...this.props}>
         
         <StyledContainer>
+          <Grid>
           <h1>Ana Carolina &amp; Gustavo</h1>
           {this.getNavList({})}
+          </Grid>
         </StyledContainer>
       </Nav>
     );
   }
 }
+
+const Grid = styled.div`
+  display: grid;
+  margin-top: 14px;
+`;
 
 const SocialIcons = styled.div`
   display: flex;

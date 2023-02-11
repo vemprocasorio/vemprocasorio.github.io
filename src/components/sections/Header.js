@@ -11,10 +11,10 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "nous1" }
+          name: { eq: "nous" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -28,14 +28,15 @@ const Header = () => (
             <Art>
               <Img
                 fluid={data.art_build.childImageSharp.fluid}
-                style={{ borderRadius: '90%' }}
+                style={{ borderRadius: '60%' }}
               />
             </Art>
             <Text>
               <h1>
                 Vem pro casório!
               </h1>
-              <h2>Club Homs, São Paulo | 16 de dezembro de 2023</h2>
+              <h2>16 de dezembro de 2023</h2>
+              <h3>| Club Homs, São Paulo</h3>
             </Text>
           </Grid>
         </Container>
@@ -46,7 +47,7 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
+  padding-top: 80px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 100px;
@@ -55,8 +56,8 @@ const HeaderWrapper = styled.header`
 `;
 
 const Art = styled.figure`
-  margin: 16px;
-  max-width: 200px;
+  margin: 9px;
+  max-width: 400px;
   width: 100%;
   justify-self: center;
 `;
@@ -75,6 +76,11 @@ const Grid = styled.div`
     > ${Art} {
       order: 2;
     }
+  }
+
+  h1 {
+    font-size: 75px;
+    line-height: 100px;
   }
 `;
 

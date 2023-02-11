@@ -15,9 +15,12 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-weight: normal;
   }
+  h1 {
+    font-family: ${props => props.theme.font.title};
+  }
 
-  h1, h2 {
-    font-family: ${props => props.theme.font.secondary};
+  h2 {
+    font-family: ${props => props.theme.font.primary};
   }
 
   h1 {
@@ -25,13 +28,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    ${props => props.theme.font_size.regular};
-    color: ${props => props.theme.color.grey};
+    ${props => props.theme.font_size.large};
+    color: ${props => props.theme.color.gold};
   }
 
   h3 {
-    ${props => props.theme.font_size.large};
-    color: ${props => props.theme.color.grey};
+    ${props => props.theme.font_size.regular};
+    color: ${props => props.theme.color.gold};
   }
 
   p {

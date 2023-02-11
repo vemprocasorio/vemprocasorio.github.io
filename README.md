@@ -1,6 +1,4 @@
-# linuxdev-br 2019
-
-Landpage for linuxdev-br conference 2019 edition.
+Landpage for our marriage!
 
 ## Installation
 
