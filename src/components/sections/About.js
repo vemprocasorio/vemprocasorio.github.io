@@ -96,7 +96,7 @@ const About = () => (
               />
             </Art>
             <div>
-            <h2>Vida a dois</h2>
+            <h2>Nossa História</h2>
               <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
               Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 

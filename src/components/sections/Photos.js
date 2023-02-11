@@ -95,7 +95,7 @@ const VideoGrid = styled.div`
 
 const Video = styled.iframe`
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   min-height: 400px;
   height: 100%;
   margin: 0;
@@ -106,7 +106,7 @@ const Video = styled.iframe`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   align-items: center;
   grid-gap: 64px;
   margin-top: 20px;

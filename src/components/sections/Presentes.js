@@ -14,12 +14,9 @@ const Presentes = () => (
                     <p>Nós já temos duas casas montadas, 
                         uma em São Paulo e outra em Montréal no Canadá.
                         Por esse motivo não estamos aceitando items como presente.
-                     Nossa lua de mel será pelas praias do Nordeste brasileiro. Nos presente com
-                     PIX pra ajudar na nossa viagem! 
+                     Nossa lua de mel será pelas praias do Nordeste brasileiro. Nos presenteie com
+                     PIX para <strong>11-975722701</strong> pra ajudar na nossa viagem! 
                     </p>
-                    <br />
-                    <p>PIX do Ana Carolina: ## </p>
-                    <p>PIX do Gustavo: gustavo@padovan.org</p>
                 <Grid>
                 </Grid>
         </Container>
