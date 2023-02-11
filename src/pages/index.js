@@ -8,6 +8,7 @@ import About from '@sections/About';
 import Footer from '@sections/Footer';
 import Photos from '@sections/Photos';
 import Festa from '@sections/Festa';
+import Presentes from '@sections/Presentes';
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Photos />
+    <Presentes />
     <Festa />
     <Footer />
   </Layout>

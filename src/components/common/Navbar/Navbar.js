@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import ExternalLink from '@common/ExternalLink';
+import Scrollspy from 'react-scrollspy';
+import { Link } from 'gatsby';
+
+import { Container } from '@components/global';
 import {
   Nav,
-  Brand,
+  NavItem,
   StyledContainer,
   NavListWrapper,
+  MobileMenu,
+  Mobile,
 } from './style';
 
-import MailIcon from '@static/icons/mail.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
-import MediumIcon from '@static/icons/medium.svg';
-import LinkedinIcon from '@static/icons/linkedin.svg'
-import InstagramIcon from '@static/icons/instagram.svg';
+import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const SOCIAL = [
+const NAV = [
+  {
+    name: 'Home',
+    anchor: '#about',
+  },
+  {
+    name: 'Presentes',
+    anchor: '#presentes',
+  },
+  {
+    name: 'Cerimônia e Festa',
+    anchor: 'festa',
+  },
 ];
-
 
 class Navbar extends Component {
   state = {
@@ -35,16 +46,20 @@ class Navbar extends Component {
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
-    <StyledContainer>
-        {SOCIAL.map(({ icon, link }) => (
-            <SocialIcons>
-               <ExternalLink href={link}>
-                 <img src={icon} alt="link" />
-               </ExternalLink>
-               </SocialIcons>
-             ))}
-      </StyledContainer>
-      
+      <Scrollspy
+        items={NAV.map(({ name }) => name.toLowerCase())}
+        currentClassName="active"
+        mobile={mobile}
+        offset={-64}
+      >
+        {NAV.map(({ name, anchor }) => (
+          <NavItem key={name}>
+            <Link to={anchor} onClick={this.closeMobileMenu}>
+              {name}
+            </Link>
+          </NavItem>
+        ))}
+      </Scrollspy>
     </NavListWrapper>
   );
 
@@ -53,35 +68,26 @@ class Navbar extends Component {
 
     return (
       <Nav {...this.props}>
-        
         <StyledContainer>
-          <Grid>
-          <h1>Ana Carolina &amp; Gustavo</h1>
-          {this.getNavList({})}
-          </Grid>
+        <h1>Ana Carolina &amp; Gustavo</h1>
+          <Mobile>
+            <button onClick={this.toggleMobileMenu}  style={{ color: 'black' }}>
+              <MenuIcon />
+            </button>
+          </Mobile>
+
+          <Mobile hide>{this.getNavList({})}</Mobile>
         </StyledContainer>
+        <Mobile>
+          {mobileMenuOpen && (
+            <MobileMenu>
+              <Container>{this.getNavList({ mobile: true })}</Container>
+            </MobileMenu>
+          )}
+        </Mobile>
       </Nav>
     );
   }
 }
-
-const Grid = styled.div`
-  display: grid;
-  margin-top: 14px;
-`;
-
-const SocialIcons = styled.div`
-  display: flex;
-
-  img {
-    margin: 16px 8px;
-    width: 24px;
-    height: 24px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-top: 16px;
-  }
-`;
 
 export default Navbar;

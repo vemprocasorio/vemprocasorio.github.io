@@ -79,7 +79,7 @@ const Grid = styled.div`
   }
 
   h1 {
-    font-size: 75px;
+    font-size: 67px;
     line-height: 100px;
   }
 `;
