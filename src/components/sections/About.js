@@ -49,13 +49,11 @@ const About = () => (
             <div>
               <h2>A noiva</h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
-              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
-              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
-               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
-               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
-                eu eu lacus. Integer vel luctus turpis.
-               Praesent semper eget nunc ut sollicitudin.
+              "Artista, Psicóloga e um raio de luz na minha vida. A Ana Carolina traz muito amor e
+              alegria pra nossas vidas. Com a leveza da artista que ela é, está sempre presente
+              para me confortar nas minhas dificuldades e dançar junto nos bons momentos.
+              A gente começou a namorar e dali a relação foi evoluindo, até que em um
+              momento eu tinha certeza que era pra sempre!" <br /><i>por Gustavo</i>
               </p>
 
             </div>
@@ -70,13 +68,12 @@ const About = () => (
           <div>
             <h2>O noivo</h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
-              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
-              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
-               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
-               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
-                eu eu lacus. Integer vel luctus turpis.
-               Praesent semper eget nunc ut sollicitudin.
+              "Amor é o mais belo dos sentimentos. Dentro dele cabe paciência, parceria, e um trabalho diário.
+              Aprendo todos os dias a amar com meu amor. Ele me ensina a viver com os olhos de alguém que se
+              encanta com a vida e que sempre enxerga um campo fértil, mesmo na falta de chuva. É com esse parceiro
+              que eu quero seguir amando!"
+               <br />
+               <i>por Ana Carolina</i>
               </p>
 
             </div>
@@ -98,17 +95,16 @@ const About = () => (
             <div>
             <h2>Nossa História</h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pulvinar augue.
-              Aliquam libero odio, volutpat a felis id, bibendum facilisis ipsum. Aliquam 
-              porttitor neque eget metus pharetra, ut mollis mauris dapibus. Duis quis euismod metus,
-               a eleifend leo. Proin semper nisi quis finibus ultricies. Duis eget lacus sem. 
-               Sed fringilla in mi ut maximus. Etiam quis eros nec massa mattis tincidunt
-                eu eu lacus. Integer vel luctus turpis.
-               Praesent semper eget nunc ut sollicitudin.
+              Já se conheciam há alguns anos das festas em Barão Geraldo, mas um dia,
+              durante a pandemia, marcaram de se encontrar na Avenida Paulista depois de
+              paquerarem, cada um de seu isolamento, por dois meses.
+              A partir daí construiram uma relação cada vez mais profunda. E já se casaram uma vez
+               - no civil, em 5 de março de 2022 - e convidam família e amiges para celebrar
+               essa união mais uma vez!
               </p>
             </div>
           </Grid>
-          <br />    
+          <br />
         </Container>
       </Section>
     )}

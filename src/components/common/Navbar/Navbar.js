@@ -32,6 +32,10 @@ const NAV = [
     name: 'Hospedagem',
     anchor: '#hospedagem',
   },
+  {
+    name: 'RSVP',
+    anchor: '#rsvp',
+  },
 ];
 
 class Navbar extends Component {

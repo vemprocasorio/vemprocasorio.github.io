@@ -10,6 +10,7 @@ import Photos from '@sections/Photos';
 import Festa from '@sections/Festa';
 import Presentes from '@sections/Presentes';
 import Hospedagem from '@sections/Hospedagem';
+import RSVP from '@sections/RSVP';
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Presentes />
     <Festa />
     <Hospedagem />
+    <RSVP />
     <Footer />
   </Layout>
 );

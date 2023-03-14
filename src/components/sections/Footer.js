@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
+import { Section, Container, SectionTitle, Red } from '@components/global';
 import Img from 'gatsby-image';
+import background from '@static/pebble.jpg';
 
 const Footer = () => (
   <StaticQuery
@@ -20,15 +22,11 @@ const Footer = () => (
       }
     `}
     render={data => (
-          <LargeGrid>
-
-          <Art_big>
-          <Img fluid={data.pebble.childImageSharp.fluid} />
-          </Art_big>
-          <div>
+        <FooterWrapper>
+        <StyledContainer>
             <p><span>🖤💙</span></p>
-            </div>
-        </LargeGrid>
+        </StyledContainer>
+      </FooterWrapper>
     )}
   />
 );
@@ -64,6 +62,31 @@ const Grid = styled.div`
           order: 2;
         }
     `}
+  }
+`;
+
+const FooterWrapper = styled.footer`
+  background-color: ${props => props.theme.color.primary};
+  background: url(${background}) no-repeat left bottom;
+  background-size: cover;
+  color: #fff;
+  padding: 1000px 0;
+`;
+
+const StyledContainer = styled(Container)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px 2px;
+    display: flex;
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 

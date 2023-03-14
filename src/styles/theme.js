@@ -22,10 +22,10 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    gold: '#ffd700',
+    gold: '#b1874b',
     grey: '#767676',
-    primary: '#9aba84',
-    navbar: '#ff9e00',
+    primary: '#815e41',
+    navbar: '#b1874b',
     },
   screen: {
     xs: '575px',

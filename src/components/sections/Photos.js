@@ -30,6 +30,16 @@ const Photos = () => (
             }
           }
         }
+        nous5: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "nous5" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -41,6 +51,9 @@ const Photos = () => (
             </Art>
             <Art>
               <Img fluid={data.nous4.childImageSharp.fluid} />
+            </Art>
+            <Art>
+              <Img fluid={data.nous5.childImageSharp.fluid} />
             </Art>
           </PhotoGrid>
         </Container>
@@ -74,7 +87,7 @@ const Art = styled.figure`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 14px;
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -106,7 +119,7 @@ const Video = styled.iframe`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 3fr 2fr 2fr;
   align-items: center;
   grid-gap: 64px;
   margin-top: 20px;

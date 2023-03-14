@@ -27,10 +27,8 @@ const Presentes = () => (
         <HeaderWrapper>
         <Container>
             <h1>Presentes</h1>
-                    <p>Nós já temos duas casas montadas, 
-                        uma em São Paulo e outra em Montréal no Canadá.
-                        Por esse motivo não estamos aceitando items como presente.
-                     Nossa lua de mel será pelas praias do Nordeste brasileiro. Nos presenteie com
+                    <p>Nós vamos passar a Lua de Mel na Bahia durante três semanas e
+                      adoraríamos que seus presentes nos ajudassem a realizar essa viagem!  Nos presenteie com
                      PIX para <strong>11-975722701</strong> ou pelo QR code abaixo:
                     </p>
                 <VideoGrid>

@@ -11,8 +11,7 @@ const Hospedagem = () => (
         <HeaderWrapper>
         <Container>
             <h1>Hospedagem</h1>
-                    <p>Em breve vamos adicionar aqui uma lista de hotéis para hospedagem.
-                    </p>
+            <p>Em breve vamos adicionar aqui uma lista de hotéis para hospedagem.</p>
                 <Grid>
                 </Grid>
         </Container>
