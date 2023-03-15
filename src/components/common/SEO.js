@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Vem pro casório!',
+  description: '16 de dezembro de 2023 em São Paulo.',
   title: 'Ana Carolina & Gustavo - Vem!',
   url: 'https://vemprocasorio.com.br',
   author: 'guspadovan',
