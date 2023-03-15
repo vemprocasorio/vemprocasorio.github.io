@@ -10,9 +10,9 @@ const Photos = () => (
   <StaticQuery
     query={graphql`
       query {
-        nous3: file(
+        nous6: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "nous3" }
+          name: { eq: "nous6" }
         ) {
           childImageSharp {
             fluid(maxWidth: 800) {
@@ -47,10 +47,10 @@ const Photos = () => (
         <Container>
           <PhotoGrid>
             <Art>
-              <Img fluid={data.nous3.childImageSharp.fluid} />
+              <Img fluid={data.nous4.childImageSharp.fluid} />
             </Art>
             <Art>
-              <Img fluid={data.nous4.childImageSharp.fluid} />
+              <Img fluid={data.nous6.childImageSharp.fluid} />
             </Art>
             <Art>
               <Img fluid={data.nous5.childImageSharp.fluid} />
@@ -119,7 +119,7 @@ const Video = styled.iframe`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-columns: 2fr 3fr 2fr;
   align-items: center;
   grid-gap: 64px;
   margin-top: 20px;
