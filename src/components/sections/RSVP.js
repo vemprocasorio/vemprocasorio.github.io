@@ -8,11 +8,7 @@ const RSVP = () => (
         <HeaderWrapper>
         <Container>
             <h1>RSVP</h1>
-            <center>
-              <Iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRnAX2UgTBe58EL2GbBQ0Dn5vmXZAhCqMH50IWMhmxtMKOig/viewform?embedded=true">
-                Chargement en cours…
-              </Iframe>
-            </center>
+            <p>Confirme sua presença através do <a href="https://forms.gle/vkgfRRnsnmTEJBibA">formulario</a>.</p>
         </Container>
         </HeaderWrapper>
     </Section>
@@ -20,7 +16,7 @@ const RSVP = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.white.dark};
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   padding-top: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;
