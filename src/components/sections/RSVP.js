@@ -8,7 +8,7 @@ const RSVP = () => (
         <HeaderWrapper>
         <Container>
             <h1>RSVP</h1>
-            <p>Confirme sua presença através do <a href="https://forms.gle/vkgfRRnsnmTEJBibA">formulario</a>.</p>
+            <p>Confirme sua presença através do <a href="https://forms.gle/vkgfRRnsnmTEJBibA">formulário</a>.</p>
         </Container>
         </HeaderWrapper>
     </Section>
