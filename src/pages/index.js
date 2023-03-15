@@ -20,8 +20,8 @@ const IndexPage = () => (
     <Photos />
     <Presentes />
     <Festa />
-    <Hospedagem />
     <RSVP />
+    <Hospedagem />
     <Footer />
   </Layout>
 );

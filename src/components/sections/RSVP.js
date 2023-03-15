@@ -8,9 +8,10 @@ const RSVP = () => (
         <HeaderWrapper>
         <Container>
             <h1>RSVP</h1>
-                <center>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRnAX2UgTBe58EL2GbBQ0Dn5vmXZAhCqMH50IWMhmxtMKOig/viewform?embedded=true" 
-            width="600" height="1600" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours…</iframe>
+            <center>
+              <Iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRnAX2UgTBe58EL2GbBQ0Dn5vmXZAhCqMH50IWMhmxtMKOig/viewform?embedded=true">
+                Chargement en cours…
+              </Iframe>
             </center>
         </Container>
         </HeaderWrapper>
@@ -18,7 +19,7 @@ const RSVP = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${props => props.theme.color.white.dark};
   padding-bottom: 20px;
   padding-top: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -26,7 +27,14 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const Art = styled.figure`
+const Iframe = styled.iframe`
+  height: 1600px;
+  width: 600px;
+  border: 0;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    height: 1800px;
+    width: 450px;
+    padding-bottom: 0;
   }
 `;
 

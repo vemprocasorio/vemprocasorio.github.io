@@ -29,12 +29,12 @@ const NAV = [
     anchor: '#festa',
   },
   {
-    name: 'Hospedagem',
-    anchor: '#hospedagem',
-  },
-  {
     name: 'RSVP',
     anchor: '#rsvp',
+  },
+  {
+    name: 'Hospedagem',
+    anchor: '#hospedagem',
   },
 ];
 
