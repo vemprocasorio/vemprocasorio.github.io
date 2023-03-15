@@ -22,7 +22,7 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    gold: '#b1874b',
+    gold: '#b1964b',
     grey: '#767676',
     primary: '#815e41',
     navbar: '#b1874b',
