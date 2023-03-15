@@ -125,8 +125,10 @@ const PhotoGrid = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
+    margin-left: 30px;
+    margin-right: 30px;
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 40px;
     > ${Art} {
       order: 2;
     }
