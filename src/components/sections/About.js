@@ -98,7 +98,7 @@ const About = () => (
               durante a pandemia, marcaram de se encontrar na Avenida Paulista depois de
               paquerarem, cada um de seu isolamento, por dois meses.
               A partir daí construiram uma relação cada vez mais profunda. E já se casaram uma vez
-               - no civil, em 5 de março de 2022 - e convidam família e amiges para celebrar
+               - no civil, em 5 de março de 2022 - e convidam família e amigues para celebrar
                essa união mais uma vez!
               </p>
             </div>
