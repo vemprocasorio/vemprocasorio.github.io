@@ -11,7 +11,8 @@ const Hospedagem = () => (
         <HeaderWrapper>
         <Container>
             <h1>Hospedagem</h1>
-            <p>Em breve vamos adicionar aqui uma lista de hotéis para hospedagem.</p>
+            <p>Preparamos uma <a href="https://docs.google.com/document/d/1deLm7wZJXz3qCS-znMRtn-xCSZpbAocQjz_gpiUmCC8/edit?usp=sharing">lista de hotéis</a> para hospedagem na região. 
+            Há muitas outras opções em sites como o <a href="https://www.booking.com/">Booking</a> e <a href="https://www.airbnb.com.br/">AirBnb</a>.</p> 
                 <Grid>
                 </Grid>
         </Container>
