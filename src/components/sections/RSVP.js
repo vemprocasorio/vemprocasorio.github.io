@@ -8,15 +8,15 @@ const RSVP = () => (
         <HeaderWrapper>
         <Container>
             <h1>RSVP</h1>
-            <p>Confirme sua presença através do <a href="https://forms.gle/vkgfRRnsnmTEJBibA">formulário</a>.</p>
+            <h3>Confirme sua presença através do <a href="https://forms.gle/vkgfRRnsnmTEJBibA">formulário</a>.</h3>
         </Container>
         </HeaderWrapper>
     </Section>
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.white.dark};
-  padding-bottom: 0px;
+  background-color: ${props => props.theme.color.primary};
+  padding-bottom: 20px;
   padding-top: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;

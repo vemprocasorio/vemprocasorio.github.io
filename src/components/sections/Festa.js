@@ -8,7 +8,7 @@ const Festa = () => (
     <Section id="festa">
         <HeaderWrapper>
         <Container>
-            <h1>Cerimônia e Festa</h1>
+            <h1><b>Cerimônia e Festa</b></h1>
                  <Grid>
                     <Container>
                         <br />

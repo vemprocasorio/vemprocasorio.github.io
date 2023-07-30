@@ -33,7 +33,7 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Vem pro casório!
+                <b>Vem pro casório!</b>
               </h1>
               <h2>16 de dezembro de 2023</h2>
               <h3>| Club Homs, São Paulo</h3>
