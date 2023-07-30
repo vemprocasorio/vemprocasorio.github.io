@@ -34,7 +34,7 @@ const Festa = () => (
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 30px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;
   }

@@ -18,15 +18,15 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 const NAV = [
   {
     name: 'Home',
-    anchor: '#about',
-  },
-  {
-    name: 'Presentes',
-    anchor: '#presentes',
+    anchor: '#top',
   },
   {
     name: 'Cerimônia e Festa',
     anchor: '#festa',
+  },
+  {
+    name: 'Presentes',
+    anchor: '#presentes',
   },
   {
     name: 'RSVP',

@@ -45,7 +45,7 @@ const Presentes = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.white.regular};
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   padding-top: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;

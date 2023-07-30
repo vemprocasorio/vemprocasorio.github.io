@@ -21,7 +21,7 @@ const Hospedagem = () => (
 );
 
 const HeaderWrapper = styled.header`
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 20px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;
