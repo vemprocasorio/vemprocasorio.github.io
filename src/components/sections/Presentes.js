@@ -27,7 +27,7 @@ const Presentes = () => (
         <HeaderWrapper>
         <Container>
             <h1>Presentes</h1>
-                    <p>Na nossa Lua de Mel, queremos viajar pelas praias do Nordeste por três semanas e
+                    <p>Em nossa Lua de Mel, queremos viajar pelas praias do Nordeste por três semanas e
                       adoraríamos que seus presentes nos ajudassem a realizar essa viagem!  Nos presenteie com
                      PIX para <strong>11-975722701</strong> ou pelo QR code abaixo:
                     </p>
@@ -46,7 +46,7 @@ const Presentes = () => (
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.white.regular};
   padding-bottom: 0px;
-  padding-top: 20px;
+  padding-top: 50px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;
   }

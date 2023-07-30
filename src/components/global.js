@@ -30,11 +30,11 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding-top: 50px;
+  padding-top: 20px;
   overflow: hidden;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 60px;
+    padding-top: 45px;
   }
 
   ${props =>

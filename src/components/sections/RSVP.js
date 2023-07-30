@@ -17,7 +17,7 @@ const RSVP = () => (
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 50px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 15px;
   }
