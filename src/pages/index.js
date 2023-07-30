@@ -18,8 +18,8 @@ const IndexPage = () => (
     <Header />
     <About />
     <Photos />
-    <Presentes />
     <Festa />
+    <Presentes />
     <RSVP />
     <Hospedagem />
     <Footer />

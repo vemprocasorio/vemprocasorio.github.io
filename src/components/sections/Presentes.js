@@ -27,7 +27,7 @@ const Presentes = () => (
         <HeaderWrapper>
         <Container>
             <h1>Presentes</h1>
-                    <p>Nós vamos passar a Lua de Mel na Bahia durante três semanas e
+                    <p>Na nossa Lua de Mel, queremos viajar pelas praias do Nordeste por três semanas e
                       adoraríamos que seus presentes nos ajudassem a realizar essa viagem!  Nos presenteie com
                      PIX para <strong>11-975722701</strong> ou pelo QR code abaixo:
                     </p>
