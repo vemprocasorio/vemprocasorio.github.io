@@ -47,9 +47,6 @@ const Photos = () => (
         <Container>
           <PhotoGrid>
             <Art>
-              <Img fluid={data.nous4.childImageSharp.fluid} />
-            </Art>
-            <Art>
               <Img fluid={data.nous6.childImageSharp.fluid} />
             </Art>
             <Art>
@@ -119,7 +116,7 @@ const Video = styled.iframe`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 3fr 2fr;
   align-items: center;
   grid-gap: 64px;
   margin-top: 20px;
@@ -127,7 +124,7 @@ const PhotoGrid = styled.div`
   @media (max-width: ${props => props.theme.screen.md}) {
     margin-left: 30px;
     margin-right: 30px;
-    grid-template-columns: 2fr 3fr 2fr; 
+    grid-template-columns: 3fr 2fr; 
     grid-gap: 40px;
     > ${Art} {
       order: 2;
